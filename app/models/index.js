@@ -1,4 +1,8 @@
-const config = require("../config/db.config.js");
+let config = require("../config/db.config.js");
+const args = process.argv.slice(2);
+if (args[0] && args[0] == 'dev') {
+  config = require("../config/db.dev.config.js")
+}
 
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
