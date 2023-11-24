@@ -3,8 +3,18 @@ const config = require("../config/auth.config.js");
 const db = require("../models");
 const User = db.user;
 
+getTokenFromRequest = (req) => {
+  if (req.headers.authorization && req.headers.authorization.split(' ')[0] === 'Bearer')
+      return req.headers.authorization.split(' ')[1];
+  else if (req.query && req.query.token)
+      return req.query.token;
+
+  return null;
+}
+
 verifyToken = (req, res, next) => {
-  let token = req.session.token;
+  
+  const token = getTokenFromRequest(req);
 
   if (!token) {
     return res.status(403).send({

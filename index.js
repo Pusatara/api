@@ -9,13 +9,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(
-  cookieSession({
-    name: "session",
-    keys: [process.env.cookie_secret],
-    httpOnly: true,
-  })
-);
+// app.use(
+//   cookieSession({
+//     name: "session",
+//     keys: [process.env.cookie_secret],
+//     httpOnly: true,
+//   })
+// );
 
 const db = require("./app/models");
 const Role = db.role;
