@@ -10,6 +10,7 @@ const bcrypt = require("bcryptjs");
 
 exports.signup = async (req, res) => {
   // Save User to Database
+  // TODO: username and email validation
   try {
     const user = await User.create({
       username: req.body.username,
