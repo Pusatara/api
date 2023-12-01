@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require("express");
 const cors = require("cors");
-const cookieSession = require("cookie-session");
+const bcrypt = require("bcryptjs");
 
 const app = express();
 
@@ -21,7 +21,7 @@ db.sequelize.sync({force: true}).then(() => {
 function initial() {
   User.create({
     username: "admin",
-    password: process.env.testing_password,
+    password: bcrypt.hashSync(process.env.testing_password, 8),
     email: "meta@bangkit.academy"
   });
 }
