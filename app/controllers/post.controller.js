@@ -56,6 +56,46 @@ exports.createPost = async (req, res) => {
   }
 };
 
+exports.getPostById = async (req, res) => {
+  try {
+    const postId = req.params.id;
+    const post = await Post.findByPk(postId);
+
+    if (!post) {
+      return res.status(404).send({ message: 'Post not found.' });
+    }
+
+    res.send(post);
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+};
+
+exports.getPosts = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1; // Current page number
+    const limit = parseInt(req.query.limit) || 10; // Number of posts per page
+
+    const offset = (page - 1) * limit;
+
+    const posts = await Post.findAndCountAll({
+      limit: limit,
+      offset: offset,
+      order: [['date', 'DESC']]
+    });
+
+    const totalPages = Math.ceil(posts.count / limit);
+
+    res.send({
+      data: posts.rows,
+      currentPage: page,
+      totalPages: totalPages
+    });
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+};
+
 exports.likePost = async (req, res) => {
   try {
     const { userId, postId } = req.body;
