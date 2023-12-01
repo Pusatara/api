@@ -14,46 +14,45 @@ const bucket = storage.bucket('pusatara-ugc');
 
 exports.createPost = async (req, res) => {
   try {
-    // Retrieve user data from the request
-    const { userId, title, content, isPoll } = req.body;
+    // Check if an image file is provided
+    if (!req.file) {
+      return res.status(400).send({ message: 'Image file is required.' });
+    }
 
-    // Create a new post
+    // Retrieve user data and image file from the request
+    const { userId, title, content, isPoll } = req.body;
+    const blob = bucket.file(req.file.originalname);
+    const blobStream = blob.createWriteStream();
+
+    let imageUrl;
+
+    // Upload the image file
+    await new Promise((resolve, reject) => {
+      blobStream.on('error', err => reject(err));
+      blobStream.on('finish', () => {
+        imageUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
+        resolve();
+      });
+      blobStream.end(req.file.buffer);
+    });
+
+    // Create a new post with the image URL
     const post = await Post.create({
       userId,
       title,
       content,
       isPoll,
+      imageUrl,
       date: new Date()
     });
 
-    res.send({ message: "Post created successfully!", postId: post.id });
+    res.send({ message: "Post created successfully!", postId: post.id, imageUrl });
   } catch (error) {
-    res.status(500).send({ message: error.message });
-  }
-};
-
-exports.uploadImage = async (req, res) => {
-  try {
-    if (!req.file) {
-      return res.status(400).send({ message: 'No image file uploaded.' });
+    if (error instanceof Error) {
+      res.status(500).send({ message: error.message });
+    } else {
+      res.status(500).send({ message: 'An unknown error occurred.' });
     }
-
-    const blob = bucket.file(req.file.originalname);
-    const blobStream = blob.createWriteStream();
-
-    blobStream.on('error', err => {
-      res.status(500).send({ message: err.message });
-    });
-
-    blobStream.on('finish', async () => {
-      const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
-      
-      res.status(200).send({ message: 'Image uploaded successfully', imageUrl: publicUrl });
-    });
-
-    blobStream.end(req.file.buffer);
-  } catch (error) {
-    res.status(500).send({ message: error.message });
   }
 };
 
