@@ -9,7 +9,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
 const db = require("./app/models");
 const User = db.user;
 
@@ -30,6 +29,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to my application." });
 });
 
+require('./app/routes/ai.routes')(app);
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/post.routes')(app);
