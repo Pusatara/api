@@ -83,7 +83,7 @@ exports.getPosts = async (req, res) => {
       limit: limit,
       offset: offset,
       order: [['date', 'DESC']],
-      include: { model: User, attributes: ['userId', 'username'] }
+      include: { model: User, attributes: ['id', 'username'] }
     });
 
     const totalPages = Math.ceil(posts.count / limit);
