@@ -2,6 +2,7 @@ const db = require("../models");
 const Post = db.post;
 const Like = db.like;
 const Comment = db.comment;
+const User = db.user;
 
 const { Storage } = require('@google-cloud/storage');
 
@@ -81,7 +82,8 @@ exports.getPosts = async (req, res) => {
     const posts = await Post.findAndCountAll({
       limit: limit,
       offset: offset,
-      order: [['date', 'DESC']]
+      order: [['date', 'DESC']],
+      include: { model: User, attributes: ['userId', 'username'] }
     });
 
     const totalPages = Math.ceil(posts.count / limit);
