@@ -4,6 +4,10 @@ const Jimp = require('jimp');
 exports.getPrediction = async (req, res) => {
   try {
     const model = await tf.loadLayersModel('file://app/tfjs/model.json');
+    const labels = require('../tfjs/metadata.json').labels;
+
+    // model.summary();
+
     const image = await Jimp.read(req.file.buffer);
     image.cover(150, 150, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
 
@@ -27,8 +31,14 @@ exports.getPrediction = async (req, res) => {
     let img_tensor = tf.tensor3d(values, outShape, 'float32');
     img_tensor = img_tensor.expandDims(0);
 
-    const prediction = await model.predict(img_tensor).dataSync();
-    res.send({ message: prediction });
+    const predictions = await model.predict(img_tensor).dataSync();
+    // top 3 predictions
+    const top3 = Array.from(predictions)
+      .map((p, i) => ({ probability: p, className: labels[i] }))
+      .sort((a, b) => b.probability - a.probability)
+      .slice(0, 3);
+
+    res.send(top3);
   } catch (error) {
     if (error instanceof Error) {
       res.status(500).send({ message: error.message });
