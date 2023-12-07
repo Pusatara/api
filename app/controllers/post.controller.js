@@ -60,7 +60,33 @@ exports.createPost = async (req, res) => {
 exports.getPostById = async (req, res) => {
   try {
     const postId = req.params.id;
-    const post = await Post.findByPk(postId);
+    const post = await Post.findByPk(postId, {
+      attributes: {
+        include: [
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM likes
+              WHERE likes.postId = ${postId}
+            )`),
+            'likesCount'
+          ],
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM comments
+              WHERE comments.postId = ${postId}
+            )`),
+            'commentsCount'
+          ]
+        ]
+      },
+      include: [
+        { model: User, attributes: ['username'] },
+        { model: Like, attributes: [] },
+        { model: Comment, attributes: ['id', 'content', 'date'] }
+      ]
+    });
 
     if (!post) {
       return res.status(404).send({ message: 'Post not found.' });
