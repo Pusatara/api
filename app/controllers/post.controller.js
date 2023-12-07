@@ -109,7 +109,31 @@ exports.getPosts = async (req, res) => {
       limit: limit,
       offset: offset,
       order: [['date', 'DESC']],
-      include: { model: User, attributes: ['id', 'username'] }
+      include: [
+        { model: User, attributes: ['username'] },
+        { model: Like, attributes: [] },
+        { model: Comment, attributes: [] }
+      ],
+      attributes: {
+        include: [
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM likes
+              WHERE likes.postId = post.id
+            )`),
+            'likesCount'
+          ],
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM comments
+              WHERE comments.postId = post.id
+            )`),
+            'commentsCount'
+          ]
+        ]
+      }
     });
 
     const totalPages = Math.ceil(posts.count / limit);
