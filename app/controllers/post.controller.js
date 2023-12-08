@@ -78,6 +78,14 @@ exports.getPostById = async (req, res) => {
               WHERE comments.postId = ${postId}
             )`),
             'commentsCount'
+          ],
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM likes
+              WHERE likes.postId = ${postId} AND likes.userId = ${req.userId}
+            )`),
+            'isLiked'
           ]
         ]
       },
@@ -131,7 +139,15 @@ exports.getPosts = async (req, res) => {
               WHERE comments.postId = post.id
             )`),
             'commentsCount'
-          ]
+          ],                  
+          [
+            db.sequelize.literal(`(
+              SELECT COUNT(*)
+              FROM likes
+              WHERE likes.postId = post.id AND likes.userId = ${req.userId}
+            )`),
+            'isLiked'
+          ]          
         ]
       }
     });
