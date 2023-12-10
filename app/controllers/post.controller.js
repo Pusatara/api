@@ -12,6 +12,13 @@ const storage = new Storage({
 });
 
 const bucket = storage.bucket('pusatara-ugc');
+const jwt = require("jsonwebtoken");
+
+const getUserId = (req) => { 
+  const token = req.headers.authorization.split(' ')[1];
+  const decodedToken = jwt.verify(token, process.env.secret_key);
+  return decodedToken.id;
+}
 
 exports.createPost = async (req, res) => {
   try {
@@ -21,7 +28,7 @@ exports.createPost = async (req, res) => {
     }
 
     // Retrieve user data and image file from the request
-    const { userId, title, content, isPoll } = req.body;
+    const { title, content, isPoll } = req.body;
     const blob = bucket.file(req.file.originalname);
     const blobStream = blob.createWriteStream();
 
@@ -39,7 +46,7 @@ exports.createPost = async (req, res) => {
 
     // Create a new post with the image URL
     const post = await Post.create({
-      userId,
+      userId: getUserId(req),
       title,
       content,
       isPoll,
@@ -166,10 +173,10 @@ exports.getPosts = async (req, res) => {
 
 exports.likePost = async (req, res) => {
   try {
-    const { userId, postId } = req.body;
+    const { postId } = req.body;
 
     const like = await Like.create({
-      userId: userId,
+      userId: getUserId(req),
       postId: postId
     });
 
@@ -181,11 +188,11 @@ exports.likePost = async (req, res) => {
 
 exports.unlikePost = async (req, res) => {
   try {
-    const { userId, postId } = req.body;
+    const { postId } = req.query;
 
     await Like.destroy({
       where: {
-        userId: userId,
+        userId: getUserId(req),
         postId: postId
       }
     });
@@ -198,10 +205,10 @@ exports.unlikePost = async (req, res) => {
 
 exports.addComment = async (req, res) => {
   try {
-    const { userId, postId, content } = req.body;
+    const { postId, content } = req.body;
 
     const comment = await Comment.create({
-      userId: userId,
+      userId: getUserId(req),
       postId: postId,
       content: content,
       date: new Date()
@@ -215,7 +222,7 @@ exports.addComment = async (req, res) => {
 
 exports.deleteComment = async (req, res) => {
   try {
-    const { commentId } = req.params;
+    const { commentId } = req.query;
 
     await Comment.destroy({
       where: {
