@@ -3,10 +3,11 @@ const Jimp = require('jimp');
 
 exports.getPrediction = async (req, res) => {
   try {
+    if (!req.file) {
+      throw new Error('Image is not present in the request.');
+    }
     const model = await tf.loadLayersModel('file://app/tfjs/model.json');
     const labels = require('../tfjs/metadata.json').labels;
-
-    // model.summary();
 
     const image = await Jimp.read(req.file.buffer);
     image.cover(150, 150, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
