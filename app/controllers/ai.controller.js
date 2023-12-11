@@ -34,7 +34,14 @@ exports.getPrediction = async (req, res) => {
     const predictions = await model.predict(img_tensor).dataSync();
     // top 3 predictions
     const top3 = Array.from(predictions)
-      .map((p, i) => ({ probability: p, className: labels[i] }))
+      .map((p, i) => {
+        const formattedProbability = +(p * 100).toFixed(2);
+        return {
+          className: labels[i],
+          probability: formattedProbability,
+          rawProbability: p,
+        };
+      })
       .sort((a, b) => b.probability - a.probability)
       .slice(0, 3);
 
