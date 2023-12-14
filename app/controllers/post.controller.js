@@ -14,7 +14,7 @@ const storage = new Storage({
 const bucket = storage.bucket('pusatara-ugc');
 const jwt = require("jsonwebtoken");
 
-const getUserId = (req) => { 
+const getUserId = (req) => {
   const token = req.headers.authorization.split(' ')[1];
   const decodedToken = jwt.verify(token, process.env.secret_key);
   return decodedToken.id;
@@ -146,7 +146,7 @@ exports.getPosts = async (req, res) => {
               WHERE comments.postId = post.id
             )`),
             'commentsCount'
-          ],                  
+          ],
           [
             db.sequelize.literal(`(
               SELECT COUNT(*)
@@ -154,7 +154,7 @@ exports.getPosts = async (req, res) => {
               WHERE likes.postId = post.id AND likes.userId = ${req.userId}
             )`),
             'isLiked'
-          ]          
+          ]
         ]
       }
     });
@@ -174,15 +174,29 @@ exports.getPosts = async (req, res) => {
 exports.likePost = async (req, res) => {
   try {
     const { postId } = req.body;
+    const post = await Post.findByPk(postId);
+    if (!post) {
+      return res.status(404).send({ message: 'Post not found.' });
+    }
 
-    const like = await Like.create({
+    const like = await Like.findOne({
+      where: {
+        userId: getUserId(req),
+        postId: postId
+      }
+    });
+    if (like) {
+      return res.status(400).send({ message: 'Post already liked.' });
+    }
+
+    await Like.create({
       userId: getUserId(req),
       postId: postId
     });
 
-    res.send({ message: "Post liked successfully!" });
+    return res.send({ message: "Post liked successfully!" });
   } catch (error) {
-    res.status(500).send({ message: error.message });
+    return res.status(500).send({ message: error.message });
   }
 };
 
