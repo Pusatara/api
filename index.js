@@ -1,4 +1,5 @@
 require('dotenv').config()
+
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -34,7 +35,13 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/post.routes')(app);
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+let port;
+const args = process.argv.slice(2);
+if (args[0] && args[0] == 'dev') {
+  port = process.env.port_dev;
+} else {
+  port = process.env.port;
+}
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
 });
