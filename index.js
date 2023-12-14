@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+const { is_development } = require('./app/config/config.js');
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 const db = require("./app/models");
 const User = db.user;
 
-db.sequelize.sync({force: true}).then(() => {
+db.sequelize.sync({force: is_development}).then(() => {
   console.log('Drop and Resync Db');
   initial();
 });
@@ -35,13 +35,7 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/post.routes')(app);
 
-let port;
-const args = process.argv.slice(2);
-if (args[0] && args[0] == 'dev') {
-  port = process.env.port_dev;
-} else {
-  port = process.env.port;
-}
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}.`);
+const PORT = is_development ? process.env.port_dev : process.env.port;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });

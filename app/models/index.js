@@ -1,22 +1,19 @@
-let config = require("../config/db.config.js");
-const args = process.argv.slice(2);
-if (args[0] && args[0] == 'dev') {
-  config = require("../config/db.dev.config.js")
-}
+const { is_development } = require('../config/config.js');
+const CONFIG = is_development ? require('../config/db.dev.config.js') : require('../config/db.config.json');
 
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
-  config.DB,
-  config.USER,
-  config.PASSWORD,
+  CONFIG.DB,
+  CONFIG.USER,
+  CONFIG.PASSWORD,
   {
-    host: config.HOST,
-    dialect: config.dialect,
+    host: CONFIG.HOST,
+    dialect: CONFIG.dialect,
     pool: {
-      max: config.pool.max,
-      min: config.pool.min,
-      acquire: config.pool.acquire,
-      idle: config.pool.idle
+      max: CONFIG.pool.max,
+      min: CONFIG.pool.min,
+      acquire: CONFIG.pool.acquire,
+      idle: CONFIG.pool.idle
     }
   }
 );
