@@ -1,5 +1,5 @@
 const { is_development } = require('../config/config.js');
-const CONFIG = is_development ? require('../config/db.dev.config.js') : require('../config/db.config.json');
+const CONFIG = is_development ? require('../config/db.dev.config.js') : require('../config/db.config.js');
 
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
