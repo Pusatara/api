@@ -3,7 +3,6 @@ const { is_development } = require('./app/config/config.js');
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
-const https = require('https');
 const http = require('http');
 
 const app = express();
@@ -37,12 +36,8 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/post.routes')(app);
 
-if (is_development) {
-  http.createServer(app).listen(process.env.port_dev, () => {
-    console.log(`Server is running on port ${process.env.port_dev}.`);
-  });
-} else {
-  https.createServer(app).listen(process.env.port, () => {
-    console.log(`Server is running on port ${process.env.port}.`);
-  });
-}
+const PORT = is_development ? process.env.port_dev : process.env.port;
+
+http.createServer(app).listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
