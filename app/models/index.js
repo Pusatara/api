@@ -5,7 +5,7 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize(
   CONFIG.DB,
   CONFIG.USER,
-  CONFIG.PASSWORD,
+  CONFIG.PASSWORD,  
   {
     host: CONFIG.HOST,
     dialect: CONFIG.dialect,
@@ -14,7 +14,7 @@ const sequelize = new Sequelize(
       min: CONFIG.pool.min,
       acquire: CONFIG.pool.acquire,
       idle: CONFIG.pool.idle
-    }
+    },
   }
 );
 

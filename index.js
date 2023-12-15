@@ -35,6 +35,7 @@ require('./app/routes/ai.routes')(app);
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 require('./app/routes/post.routes')(app);
+require('./app/routes/glossary.routes')(app);
 
 const PORT = is_development ? process.env.port_dev : process.env.port;
 
