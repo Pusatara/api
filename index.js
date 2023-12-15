@@ -28,7 +28,7 @@ function initial() {
 }
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my application." });
+  res.json({ message: "Welcome to Pusatara API" });
 });
 
 require('./app/routes/ai.routes')(app);
