@@ -1,135 +1,135 @@
 [
   {
     "name": "Batik",
-    "desc": "Seni lukis yang menggunakan canting sebagai alat untuk melukisnya. Canting sendiri merupakan sebuah alat berbentuk mangkok kecil yang terbuat dari tembaga dan memiliki carat atau monong, dengan tangkai dari bambu atau kayu yang dapat diisi malam (lilin) sebagai bahan untuk melukis. Canting ini dapat membuat kumpulan garis, titik atau cecek yang pada akhirnya membentuk pola-pola. Pola-pola inilah yang kemudian menjadi ragam hias dalam kesenian batik dengan artinya masing-masing. Batik yang tersebar hampir di seluruh Indonesia memiliki bentuk ragam hias yang berbeda-beda diantara satu dan lainnya.",
+    "desc": "The art of painting that uses canting as a tool for painting. Canting itself is a small bowl-shaped tool made of copper and has a carat or monong, with a stem made of bamboo or wood which can be filled with wax (wax) as a material for painting. This canting can create a collection of lines, dots or checks which ultimately form patterns. These patterns then become decorative variations in batik art with their respective meanings. Batik, which is spread throughout almost all of Indonesia, has various decorative forms that differ from one another.",
     "patterns": [
       {
         "name": "Sido Mukti",
-        "desc": "Batik klasik khas busana keraton yang berasal dari Bahasa Jawa. Nama “Sido Mukti” berasal dari kata ‘sido’ yang berarti jadi, atau terus-menerus, serta ‘mukti’ yang berarti mulia dan sejahtera. Batik motif Sido Mukti berarti terus-menerus menjadi mulia dan sejahtera atau hidup berkecukupan. Batik ini dibuat menggunakan zat pewarna sogan alam dan biasanya dikenakan sebagai busana dalam upacara adat perkawinan pada saat acara resepsi atau pahargyan. Batik motif ini dikenakan oleh pengantin pria maupun wanita yang dinamakan juga sebagai sawitan (sepasang). Dengan memakai batik motif Sido Mukti, diharapkan kedua mempelai akan memperoleh kebahagiaan selama hidupnya.",
+        "desc": "Classic batik is typical of palace clothing originating from the Javanese language. The name \"Sido Mukti\" comes from the words 'sido' which means to be, or continually, and 'mukti' which means noble and prosperous. Sido Mukti motif batik means continually being noble and prosperous or living well. This batik is made using natural sogan dye and is usually worn as clothing in traditional wedding ceremonies during receptions or mahalgyan events. This batik motif is worn by the bride and groom and is also called sawitan (a pair). By wearing batik with the Sido Mukti motif, it is hoped that the bride and groom will experience happiness throughout their lives.",
         "image": "https://i.ibb.co/1qD0yf2/motif-batik-sidomukti-main.jpg"
       },
       {
         "name": "Sido Luhur",
-        "desc": "Batik Sidoluhur adalah salah satu jenis batik keraton yang berasal dari Keraton Yogyakarta dan Surakarta. Motif batik Sidoluhur biasanya dikenakan oleh pengantin wanita pada malam pernikahan di Keraton Surakarta. Motif batik Sidoluhur memiliki filosofi bangsawan, yaitu mencari aristokrat material dan immaterial. Bangsawan material dapat diartikan sebagai pemenuhan segala kebutuhan fisik yang dicapai melalui kerja keras yang selaras dengan profesi. Yang dimaksud aristokrat tak berwujud adalah aristokrat berupa semangat, bahasa dan tindakan. Selain itu, motif batik Sidoluhur juga sangat penting untuk pagelaran dan dapat menjadi panutan bagi masyarakat.",
+        "desc": "Batik Sido Luhur is a type of palace batik originating from the Yogyakarta and Surakarta Palaces. The Sidoluhur batik motif is usually worn by the bride on her wedding night at the Surakarta Palace. The Sidoluhur batik motif has a nobility philosophy, namely looking for material and immaterial aristocrats. Material nobility can be defined as the fulfillment of all physical needs achieved through hard work in harmony with the profession. What is meant by intangible aristocrats is aristocrats in the form of spirit, language and actions. Apart from that, the Sidoluhur batik motif is also very important for performances and can be a role model for the community.",
         "image": "https://www.wisma-bahasa.com/wp-content/uploads/elementor/thumbs/sido-luhur-1-owgdtzpp6y2f6alkjiw2lp1sml4wuhdkbd4o8mjpv0.jpg"
       },
       {
         "name": "Sekar Jagad",
-        "desc": "Batik Sekar Jagad berasal dari Yogyakarta. Motif ini memiliki makna yang berasal dari bahasa Jawa 'sekar' dan 'jagad'. 'Sekar' yang artinya bunga atau kembang, dan 'Jagad' yang berarti dunia atau alam semesta. Sehingga motif Sekar Jagad ini menggambarkan keanekaragaman dunia bunga dan tumbuhan, melambangkan hati yang bergembira dikarenakan putri atau putra telah mendapatkan jodoh. Ada pula yang beranggapan bahwa motif Sekar Jagad sebenarnya berasal dari kata 'kar jagad' yang diambil dari bahasa Jawa (kar: 'peta', jagad: 'dunia'), sehingga motif ini juga melambangkan keragaman di seluruh dunia",
+        "desc": "Batik Sekar Jagad comes from Yogyakarta. This motif has a meaning that comes from the Javanese words 'sekar' and 'jagad'. 'Sekar' which means flower or flower, and 'Jagad' which means world or universe. So the Sekar Jagad motif depicts the diversity of the world of flowers and plants, symbolizing a happy heart because a daughter or son has found a soul mate. There are also those who think that the Sekar Jagad motif actually comes from the word 'kar jagad' which is taken from Javanese (kar: 'peta', jagad: 'world'), so this motif also symbolizes diversity throughout the world.",
         "image": "https://javanologi.uns.ac.id/wp-content/uploads/sites/26/2022/10/sekarjagad-1.jpg"
       },
       {
         "name": "Parang",
-        "desc": "Batik parang merupakan motif batik yang sudah ada sejak dulu. Kata 'parang' berasal dari kata Jawa 'pereng' (arti: 'lereng'), yang digambarkan sebagai lekukan menyerupai gelombang laut. Batik bermotif Parang dikenal juga dengan sebutan batik bermotif pedang atau keris. Simbol mata parang berbentuk huruf 'S' yang melambangkan tenaga, kekuatan dan semangat yang tidak pernah padam seperti api yang menyala-nyala. Inilah sebabnya pada masa kerajaan Mataram di Kartasura, batik bermotif parang hanya boleh dikenakan oleh raja, penguasa, dan ksatria seperti pangeran dan senopati. Oleh karena itu, batik bermotif Parang disebut juga batik terlarang karena masyarakat awam tidak bisa memakainya.",
+        "desc": "Batik Parang is a batik motif that has been around for a long time. The word 'parang' comes from the Javanese word 'pereng' (meaning: 'slope'), which is described as a curve resembling an ocean wave. Parang patterned batik is also known as sword or keris patterned batik. The machete eye symbol is in the shape of the letter 'S' which symbolizes power, strength and enthusiasm that never goes out like a burning fire. This is why during the Mataram kingdom in Kartasura, machete-patterned batik could only be worn by kings, rulers and knights such as princes and senopati. Therefore, batik with the Parang motif is also called forbidden batik because ordinary people cannot wear it.",
         "image": "https://cdnwpseller.gramedia.net/wp-content/uploads/2023/05/batik-parang-2.png"
       },
       {
         "name": "Lereng",
-        "desc": "Batik motif Lereng mempunyai pola yang serupa dengan batik Parang. Perbedaannya hanya keberadaan garis diagonal 45 derajat diantara motif Parang. Dapat ditemukan juga motif Lereng dengan bentuk pola sederhana, yaitu berupa deretan garis diagonal yang sempit dan penuh dengan ornamen kecil. Pada zaman dahulu, motif ini hanya boleh dikenakan untuk keluarga kerajaan. Makna filosofi dibalik batik Lereng adalah sebagai perlambangan kesucian dan kekuatan.",
+        "desc": "The Lereng motif batik has a pattern similar to the Parang batik. The only difference is the presence of a 45 degree diagonal line between the Parang motifs. You can also find the Slope motif with a simple pattern, namely a row of narrow diagonal lines and full of small ornaments. In ancient times, this motif could only be worn by the royal family. The philosophical meaning behind Lereng batik is as a symbol of purity and strength.",
         "image": "https://awsimages.detik.net.id/community/media/visual/2022/12/11/motif-batik-parang-lereng_169.jpeg"
       },
       {
         "name": "Ikat Celup",
-        "desc": "Batik Ikat Celup juga dikenal sebagai tie-dye. Teknik yang digunakan dalam kegiatan ini adalah teknik mengikat simpul kain yang kemudian diwarnai sehingga menghasilkan desain yang unik dan beragam. Jika bagian yang ingin diwarnai hanya sedikit, Anda dapat menggunakan alat berupa kuas. Berbagai cara melipat, menggulung, membuat simpul, mengisi atau mewarnai tekstil akan menghasilkan pola dan warna yang berbeda. Motif ini telah menjadi trend busana di Indonesia.",
+        "desc": "Batik Ikat Celup is also known as tie-dye. The technique used in this activity is the technique of tying cloth knots which are then colored to produce unique and varied designs. If there is only a small part you want to color, you can use a brush. Different ways of folding, rolling, knotting, filling or dyeing textiles will produce different patterns and colors. This motif has become a fashion trend in Indonesia.",
         "image": "https://asset-3.tstatic.net/jualbeli/img/njajal/2021/11/Intip-Cara-Pembuatan-Kerajinan-Kain-Batik-Ikat-Celup--Bisa-Dicoba-Sendiri-di-Rumah-master-1898166939.jpg"
       },
       {
         "name": "Cenderawasih",
-        "desc": "Batik Cenderawasih berasal dari Papua. Motif ini mempunyai arti sesuai dengan namanya, menunjukkan identitas yang jelas yaitu motif burung cendrawasih. Motif batik ini sangat istimewa karena bagi masyarakat Papua, burung cendrawasih merupakan jenis burung dari surga. Makna filosofis motif Cenderawasih mewakili kekaguman masyarakat Papua terhadap burung cendrawasih. Pola Cenderawasih juga mewakili ekspresi artistik Papua atas alam semesta pemberian Tuhan. Masyarakat Papua mengekspresikan keindahan cendrawasih dalam desain batik.",
+        "desc": "Batik Cenderawasih comes from Papua. This motif has a meaning as its name suggests, showing a clear identity, namely the bird of paradise motif. This batik motif is very special because for the Papuan people, the bird of paradise is a type of bird from heaven. The philosophical meaning of the Cenderawasih motif represents the Papuan people's admiration for the bird of paradise. The Cenderawasih pattern also represents Papua's artistic expression of the God-given universe. Papuan people express the beauty of the bird of paradise in batik designs.",
         "image": "https://www.goodnewsfromindonesia.id/uploads/post/large-batik-papua-motif-cenderraswasi-bed863376f5d9a5a020e311bf8b34441.jpg"
       },
       {
         "name": "Lasem",
-        "desc": "Batik Lasem mempunyai ciri corak dan warna yang lebih mencolok dibandingkan jenis batik lainnya. Batik lasem sering kali dibuat dengan motif burung, bambu, atau singa berwarna merah muda. Ciri khas dari motif ini adalah hasil perpaduan budaya Tionghoa dan Jawa, khususnya pesisir Jawa. Seiring berjalannya waktu, motif batik Lasem berkembang, menampilkan desain kupu-kupu dengan beragam flora dan fauna atau kombinasi bentuk dan pola kreatif lainnya dengan tetap mempertahankan warna khasnya yang spesifik, yaitu kombinasi mencolok antara coklat, kuning tua, dan ungu.",
+        "desc": "Batik Lasem is characterized by patterns and colors that are more striking than other types of batik. Lasem batik is often made with pink bird, bamboo or lion motifs. The characteristic of this motif is the result of a combination of Chinese and Javanese culture, especially the Javanese coast. Over time, the Lasem batik motif developed, featuring butterfly designs with a variety of flora and fauna or other creative combinations of shapes and patterns while maintaining its specific distinctive color, namely a striking combination of brown, dark yellow and purple.",
         "image": "https://akcdn.detik.net.id/visual/2022/01/24/batik-lasem-adalah-bentuk-akulturasi-budaya-indonesia-dan-tiongkok_169.jpeg"
       },
       {
         "name": "Kawung",
-        "desc": "Kawung merupakan motif Batik yang berasal dari Pulau Jawa. Kawung berbentuk seperti buah kolang-kaling dan disusun pada keempat sudutnya berbentuk bujur sangkar. Filosofi yang terkandung dalam pohon palem, mulai dari ujung (ujung daun) hingga akarnya, sangat bermanfaat bagi kehidupan manusia. Arti dari batik Kawung sendiri meliputi penguasaan diri yang sempurna, hati yang murni tanpa ada keinginan untuk menyombongkan diri.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Kawung is a Batik motif originating from the island of Java. Kawung is shaped like a palm fruit and is arranged at the four corners in a square shape. The philosophy contained in the palm tree, from the tips (tips of the leaves) to the roots, is very beneficial for human life. The meaning of Kawung batik itself includes perfect self-mastery, a pure heart without any desire to boast.",
+        "image": "https://www.semarangpos.com/files/2020/07/07batik-kawung.jpg"
       },
       {
         "name": "Mega Mendung",
-        "desc": "Mega Mendung adalah Batik Cirebon yang memadukan unsur Islam dan Cina. Buktinya terlihat pada lukisan awan pada piring asal Tiongkok yang dipasang pada bangunan di situs Gunung Jati. Bentuk awan tersebut diolah oleh perajin Cirebon sehingga menghasilkan gaya yang unik. Motif ini berkaitan dengan ideologi Tao yang berasal dari Tiongkok yang berpendapat bahwa awan merupakan simbol dunia yang lebih tinggi, dunia yang luas dan transenden. Motif Mega Mendung menampilkan palet warna berlapis yang terdiri dari lima hingga tujuh lapisan warna dengan makna dari agama Islam. Angka lima adalah rukun Islam dan angka tujuh adalah langit yang dilalui Nabi Muhammad SAW.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Mega Mendung adalah is Batik Cirebon which combines Islamic and Chinese elements. Evidence of this can be seen in the cloud paintings on plates from China installed on buildings at the Gunung Jati site. The cloud shape was processed by Cirebon craftsmen to produce a unique style. This motif is related to Taoist ideology originating from China which believes that clouds are a symbol of a higher world, a vast and transcendent world. The Mega Mendung motif features a layered color palette consisting of five to seven layers of colors with meanings from the Islamic religion. The number five is the pillar of Islam and the number seven is the sky through which the Prophet Muhammad SAW passed.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgNx3ukKhYG_LiAvQZMuUctPQTUn-Qg-ydZw&usqp=CAU"
       },
       {
         "name": "Tambal",
-        "desc": "Batik ini berasal dari Solo. Pada jaman dahulu, kain dengan motif Tambal dipercaya mampu mempercepat proses penyembuhan bagi yang sakit. Batik dengan motif Tambal banyak digunakan sebagai selimut orang sakit. Batik Tambal juga dikatakan mempunyai efek magis yaitu dapat menghalangi berbagai pengaruh jahat. Secara filosofis, batik dengan motif Tambal juga diharapkan dapat menambah semangat. Dengan semangat akan muncul harapan baru, dan kesembuhan bisa cepat terjadi. Batik Tambal juga mengajarkan pikiran bagi manusia untuk selalu meningkatkan diri agar mereka bisa mempunyai kehidupan yang lebih baik.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "This batik comes from Solo. In ancient times, cloth with Patch motifs was believed to speed up the healing process for the sick. Batik with a Patch motif is widely used as a blanket for sick people. Batik Tambal is also said to have a magical effect, namely it can block various evil influences. Philosophically, batik with a Patch motif is also expected to increase enthusiasm. With enthusiasm, new hope will emerge, and healing can occur quickly. Tambal Batik also teaches people to always improve themselves so that they can have a better life.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE22xAW14thOr4YyF9pp6VG_gfzn5bq1XGyw&usqp=CAU"
       },
       {
         "name": "Gentongan",
-        "desc": "Batik Gentongan merupakan salah satu jenis batik tulis dari Madura yang berkualitas baik dan sangat menjunjung tinggi tradisi Madura. Disebut batik Gentongan karena proses pewarnaannya dilakukan dengan cara merendam kain batik di dalam gentong pada saat proses pembuatannya. Hal ini bertujuan untuk menambah warna dan menghilangkan sisa lilin sehingga menghasilkan warna yang tahan lama hingga bertahun-tahun. Desain dan corak batik Gentongan merupakan hasil imajinasi masing-masing pembatik. Asal usul batik Gentongan berasal dari istri-istri nelayan yang ingin memberikan oleh-oleh kepada suaminya yang pulang dari melaut. Batik diberikan kepada suami sebagai berkah dan wujud bakti istri kepada suaminya. Dari sana, mereka juga bisa berkontribusi terhadap perekonomian keluarga dengan berjualan kain batik.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Batik Gentongan is a type of written batik from Madura that is of good quality and highly upholds Madurese traditions. It is called Gentongan batik because the coloring process is done by soaking the batik cloth in a barrel during the manufacturing process. This aims to add color and remove remaining wax, resulting in a color that lasts for years. Gentongan batik designs and patterns are the result of each batik maker's imagination. The origin of Gentongan batik comes from fishermen's wives who wanted to give souvenirs to their husbands who were returning from fishing. Batik is given to husbands as a blessing and a manifestation of the wife's devotion to her husband. From there, they can also contribute to the family's economy by selling batik cloth.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVl82ySEb_g0kjV5X5mybXSUUmZvOlXP2vSw&usqp=CAU"
       },
       {
         "name": "Truntum",
-        "desc": "Batik Truntum merupakan batik yang berasal dari Solo. Truntum artinya tumbuh kembali, berkembang, bersemi, atau menuju kemajuan (biasanya dalam cinta). Dalam upacara pernikahan adat Jawa, motif ini sering digunakan oleh orang tua calon pengantin. Penggunaan motif Truntum melambangkan sebagai orang tua yang akan membimbing dan membimbing kedua mempelai menuju kehidupan baru, khususnya kehidupan berumah tangga yang penuh liku-liku. Kehidupan berkeluarga akan langgeng dengan cinta yang selalu tumbuh dan berkembang (truntum).",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Batik Truntum is batik that comes from Solo. Truntum means growing again, developing, blossoming, or moving towards progress (usually in love). In traditional Javanese wedding ceremonies, this motif is often used by the parents of the bride and groom. The use of the Truntum motif symbolizes parents who will guide and guide the bride and groom towards a new life, especially married life which is full of twists and turns. Family life will last forever with love that always grows and develops (truntum).",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwlTVX9EuK_RGlAUDzshF33byp_7S1uVtfg&usqp=CAU"
       },
       {
         "name": "Tumpal",
-        "desc": "Motif Tumpal berasal dari Betawi dan cukup sering digunakan. Pola Tumpal yang  berbentuk segitiga ini melambangkan keseimbangan dan keselarasan antara manusia, alam semesta, dan dunia lain (Tuhan). Motif ini dikaitkan dengan gaya hidup manusia yang bisa selaras dengan alam atau spiritual. Motif Tumpal mengajarkan seseorang untuk mencari dan menjalani kehidupan yang seimbang antara duniawi dan akhirat.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Tumpal motif comes from Betawi and is used quite often. This triangular Tumpal pattern symbolizes balance and harmony between humans, the universe and the other world (God). This motif is associated with a human lifestyle which can be in harmony with nature or spirituality. The Tumpal motif teaches a person to seek and live a balanced life between the worldly and the hereafter.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveuckaxAJxjj6MMJKZjM2D1Svd43MUohP3Q&usqp=CAU"
       },
       {
         "name": "Semen",
-        "desc": "Nama batik Semen berasal dari kata Bahasa Jawa 'semi' yang berarti tumbuh atau berkembang. Secara khusus semi berati tunas atau tumbuhnya bagian dari tanaman. Sesuai dengan artinya, batik motif Semen mempunyai makna filosofi kehidupan yang bersemi, bertumbuh, atau berkembang. Dalam motif semen terdapat gambar lain berupa gunung atau meru, garuda, sayap, candi, dan naga. Motif ini juga termasuk salah satu motif larangan Keraton Yogyakarta",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Batik Semen name comes from the Javanese word 'semi' which means to grow or develop. Specifically, spring means buds or growing parts of a plant. In accordance with its meaning, Semen motif batik has the meaning of the philosophy of life that blossoms, grows, or develops. In the cement motif there are other images in the form of mountains or Meru, Garuda, wings, temples and dragons. This motif is also one of the prohibited motifs of the Yogyakarta Palace.",
+        "image": "https://upload.wikimedia.org/wikipedia/id/2/27/BatikSemenRama.JPG"
       }
     ]
   },
   {
     "name": "Songket",
-    "desc": "Kain yang ditenun menggunakan benang emas, perak, dan warna lainnya dengan menggunakan teknik menyungkit, yaitu menyisipkan benang emas atau perak tersebut di bawah silangan benang lungsi (benang yang memanjang) dan benang pakan (benang yang melintang). Daerah-daerah yang terkenal untuk kerajinan songket antara lain Sumatra Barat, Palembang di Sumatera Selatan, Bali, Lombok Tengah, dan luar negeri seperti Malaysia dan Brunei.",
+    "desc": "Cloth woven using threads of gold, silver and other colors using the stitching technique, namely inserting the gold or silver threads under the intersections of the warp threads (longitudinal threads) and weft threads (transverse threads). Areas that are famous for songket crafts include West Sumatra, Palembang in South Sumatra, Bali, Central Lombok, and abroad such as Malaysia and Brunei.",
     "patterns": [
       {
         "name": "Nago Basaung",
-        "desc": "Motif Nago Basaung menggambarkan bentuk naga yang saling berhadapan, seolah-olah digambarkan dalam keadaan bertarung satu sama lain. Dikenal juga dengan nama motif nago betarung, penamaan Nago Basaung berakar dari struktur satu kesatuan dari motif naga yang membentuk lingkaran yang diyakini mengandung makna positif dalam kehidupan masyarakat. Simbol naga dipercaya sebagai sumber dari kekuatan, nasihat, gambaran dan sejarah leluhur masyarakat Palembang. Songket Nago Basaung seringkali digunakan sebagai busana pelengkap dalam pernikahan masyarakat Palembang karena naga dipercayai memiliki lambang terhadap nilai-nilai magis, spiritual, kebaikan, perlambang kemakmuran, kebaikan, dan kebijaksanaan.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Nago Basaung motif depicts the shape of dragons facing each other, as if depicted in a state of fighting with each other. Also known as the Nago Betarung motif, the name Nago Basaung is rooted in the unified structure of the dragon motif which forms a circle which is believed to contain positive meaning in people's lives. The dragon symbol is believed to be a source of strength, advice, images and ancestral history of the Palembang people. Songket Nago Basaung is often used as complementary clothing at weddings in Palembang society because dragons are believed to be a symbol of magical, spiritual, goodness, prosperity, kindness and wisdom values.",
+        "image": "https://pdbifiles.nos.jkt-1.neo.id/files/2010/25/LUKMAN_SONGKET_LEPUS_NAGA_BESAUNG.jpg"
       },
       {
         "name": "Nampan Perak",
-        "desc": "Motif Nampan Perak berasal dari kata nampan yaitu sebuah tempat yang digunakan untuk menghantarkan segala kebutuhan raja atau sultan, seperti untuk mengantar makanan dan surat. Motif ini bermakna sebagai gambaran kejayaan dan sikap patuh para pelayan kerajaan. Pada zaman dahulu, Songket Nampan Perak dipakai oleh keluarga bangsawan yang biasanya menggunakan benang emas yang dihampir seluruh kain dasarnya.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Nampan Perak motif comes from the word tray, which is a place used to deliver all the needs of a king or sultan, such as delivering food and letters. This motif is significant as a depiction of the glory and obedient attitude of the royal servants. In ancient times, Silver Songket Trays were worn by noble families who usually used gold thread in almost all of the basic cloth.",
+        "image": "https://pdbifiles.nos.jkt-1.neo.id/files/2010/12/GAMAL_SONKET_PALEMBANG20.jpg"
       },
       {
         "name": "Pucuk Rebung",
-        "desc": "Motif Pucuk Rebung berasal dari bentuk rebung atau bambu yang semua bagiannya berfungsi secara penuh, mulai akar, batang, dan daunnya dapat dimanfaatkan. Selain itu, tanaman bambu dahulu digunakan sebagai pagar kerajaan sehingga memiliki makna filosofis dari motif ini yaitu bagi yang memakainya akan dilindungi dari rintangan dan cobaan serta sebagai lambang kesejahteraan.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Pucuk Rebung motif comes from the form of bamboo shoots or bamboo, all parts of which are fully functional, from the roots, stems and leaves can be used. Apart from that, bamboo plants were previously used as royal fences so this motif has a philosophical meaning, namely that those who wear it will be protected from obstacles and trials and as a symbol of prosperity.",
+        "image": "https://img.freepik.com/premium-vector/malay-riau-batik-songket-weaving-corak-motif-pucuk-rebung-melayu-patterns-green-background_762686-62.jpg"
       },
       {
         "name": "Subahnale",
-        "desc": "Motif Subahnale berasal dari kata “Subhanallah” yang artinya Mahasuci Allah atau Tuhan yang Maha Esa. Terdapat makna filosofis dari kata Subahnale yang dikaitkan dengan tingkat kerumitan tinggi dalam proses pembuatannya, para penenun harus bersabar dan berserah diri kepada Tuhan agar proses pembuatan songket ini berjalan dengan lancar. Ciri khas dari motif ini adalah layaknya bunga ceplok dan dikelilingi motif geometris berbentuk sarang lebah yang disebut kurungan.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Subahnale motif comes from the word \"Subhanallah\" which means Glory be to Allah or Almighty God. There is a philosophical meaning to the word Subahnale which is associated with a high level of complexity in the making process, weavers must be patient and surrender to God so that the songket making process runs smoothly. The characteristic of this motif is that it looks like a ceplok flower and is surrounded by a honeycomb-shaped geometric motif called a cage.",
+        "image": "https://portalindonesianews.com/pictures/posts/motif_subahnale_fix.jpg"
       },
       {
         "name": "Bungo Cino",
-        "desc": "Motif Bungo Cino berasal dari kata Bungo berarti bunga dan Cino berasal dari bahasa Cina yang berarti emas. Benang emas pada songket ini mencerminkan kekayaan dan kemewahan. Kain ini pertama kali diciptakan sebagai simbol status sosial yang tinggi dan menjadi bagian tak terpisahkan dari budaya palembang. Motif yang di gunakan dalam songket bungo cino terinspirasi dari alam sekitar dan budaya setempat. Misalnya pola melati yang melambangkan keindahan dan kesucian, sedangkan pola mawar melambangkan kebebasan dan keindahan alam. Penggunaan warna-warna cerah dan kontras juga menjadi ciri khas songket bungo cino misalnya warna merah, kuning, hijau, dan lainnya mewakili berbagai nilai,seperti keberanian, kebangsawanan, dan kesuburan. Pembuatan Songket Bungo Cino memerlukan kesabaran dan keterampilan yang tinggi, prosesnya dimulai dengan menenun benang emas atau perak menggunakan alat tenun tradisional. Prosess pewarnaanya seringkali menggunakan bahan-bahan alami seperti daun mengkudu atau kulit kayu. Secara fisik, Songket Palembang Bungo Cino terbuat dari benang emas dan perak yang dianyam dengan tekni khusus. Namun, lebih dari sekedar kain berhias, Songket ini menyampaikan pesan penting tentang kehidupan dan nilai-nilai budaya palembang. Kain ini banyak di gunakan dalam upacara adat, pernikahan, festival budaya dan acara penting lainnya di kota palembang. Kita sebagai generasi mudah harus melestarikan warisan budaya yang kaya dan menghidupkan kembali tradisi yang paling penting.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "The Bungo Cino motif comes from the word Bungo which means flower and Cino comes from Chinese which means gold. The gold thread on this songket reflects wealth and luxury. This cloth was first created as a symbol of high social status and has become an inseparable part of Palembang culture. The motifs used in songket bungo cino are inspired by the surrounding nature and local culture. For example, the jasmine pattern symbolizes beauty and purity, while the rose pattern symbolizes freedom and natural beauty. The use of bright and contrasting colors is also a characteristic of Bungo Cino songket, for example red, yellow, green and others represent various values, such as courage, nobility and fertility. Making Songket Bungo Cino requires a lot of patience and skill, the process begins with weaving gold or silver thread using a traditional loom. The coloring process often uses natural ingredients such as noni leaves or tree bark. Physically, the Palembang Bungo Cino Songket is made from gold and silver threads woven using a special technique. However, more than just decorated cloth, this Songket conveys important messages about life and Palembang's cultural values. This cloth is widely used in traditional ceremonies, weddings, cultural festivals and other important events in the city of Palembang. We as an easy generation must preserve the rich cultural heritage and revive the most important traditions.",
+        "image": "https://smb-padiumkm-images-public-prod.oss-ap-southeast-5.aliyuncs.com/product/image/25052023/64636e18f6a7a3292d240c78/646ec000e9e945685f6c5428/62e411fb8a1d5cf61c7273902747c7.jpeg"
       }
     ],
     "types": [
       {
         "name": "Songket Palembang",
-        "desc": "Kain songket khas Palembang dengan motif bunga-bungaan, geometris, dekoratif, dan binatang.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Typical Palembang songket cloth with floral, geometric, decorative and animal motifs.",
+        "image": "https://static.promediateknologi.id/crop/0x104:720x493/750x500/webp/photo/2023/07/10/Screenshot_2023-07-10-09-26-56-50_680d03679600f7af0b4c700c6b270fe7-1572327624.jpg"
       },
       {
         "name": "Songket Bali",
-        "desc": "Kain songket khas Bali sering memiliki motif-motif tradisional seperti wayang, tari, dan seni Bali lainnya.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Typical Balinese songket cloth often has traditional motifs such as wayang, dance and other Balinese arts.",
+        "image": "https://ksmtour.com/media/images/articles17/kain-songket-sidemen-khas-bali.jpg"
       },
       {
         "name": "Songket Minangkabau",
-        "desc": "Kain songket khas Minangkabau sejatinya memperlihatkan ajaran, nilai kearifan,dan filosofi alam.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Minangkabau songket cloth actually displays teachings, wisdom values and natural philosophy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tenunan_songket_khas_Minangkabau.jpg"
       },
       {
         "name": "Songket Lombok",
-        "desc": "kain songket Lombok biasanya berwarna alami dari tumbuhan mulai dari batang, akar, daun, dan buah dengan ukuran motif yang besar hampir memenuhi kain.",
-        "image": "https://placehold.co/600x400.png"
+        "desc": "Lombok songket cloth usually comes in natural colors from plants ranging from stems, roots, leaves and fruit with large motifs that almost fill the cloth.",
+        "image": "https://cdn.idntimes.com/content-images/community/2018/11/kain-songket-sidemen-khas-bali-4761d84c6697eef4801c500570308fae.jpg"
       }
     ]
   }
