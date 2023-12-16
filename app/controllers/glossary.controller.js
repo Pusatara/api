@@ -13,27 +13,33 @@ const detectLang = (req) => {
 }
 
 exports.getGlossary = (req, res) => {
-  switch(detectLang(req)) {
+  let result = [];
+  switch (detectLang(req)) {
     case 'en':
-      res.json(g);
+      result = g;
       break;
     case 'id':
-      res.json(g_id);
+      result = g_id;
       break;
     default:
-      res.json(g);
+      result = g;
   }
-};
 
-exports.getGlossaryById = (req, res) => {
-  switch(detectLang(req)) {
-    case 'en':
-      res.json(g[req.params.id - 1]);
-      break;
-    case 'id':
-      res.json(g_id[req.params.id - 1]);
-      break;
-    default:
-      res.json(g[req.params.id - 1]);
+  if (req.query.id) {
+    const i = req.query.id;
+    result = result[i - 1]
   }
+
+  if (req.query.q) {
+    const query = req.query.q.toLowerCase();
+    if (Array.isArray(result)) {
+      result = result.map((item) => item.patterns).flat();
+    } else {
+      result = result.patterns;
+    }
+    result = result.filter((item) => item.name.toLowerCase().includes(query));
+  }
+
+  res.send(result);
+
 };
