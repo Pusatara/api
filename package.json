@@ -32,6 +32,9 @@
     "sequelize": "^6.35.1"
   },
   "devDependencies": {
-    "mysql": "^2.18.1"
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": "18.16.1"
   }
 }
