@@ -5,10 +5,11 @@ const Comment = db.comment;
 const User = db.user;
 
 const { Storage } = require('@google-cloud/storage');
+const serviceAccount = JSON.parse(process.env.gcs_sa_key);
 
 const storage = new Storage({
-  projectId: 'Pusatara',
-  keyFilename: './app/config/p_sa.json'
+  projectId: serviceAccount.project_id,
+  credentials: serviceAccount
 });
 
 const bucket = storage.bucket('pusatara-ugc');
