@@ -3,7 +3,6 @@ const CONFIG = is_development ? require('../config/db.dev.config.js') : require(
 
 const Sequelize = require("sequelize");
 const sequelizeConfig = {
-  host: CONFIG.HOST,
   dialect: CONFIG.dialect,
   pool: {
     max: CONFIG.pool.max,
@@ -15,6 +14,8 @@ const sequelizeConfig = {
 
 if (!is_development) {
   sequelizeConfig.dialectOptions.socketPath = CONFIG.socketPath;
+} else {
+  sequelizeConfig.host = CONFIG.HOST;
 }
 
 const sequelize = new Sequelize(
