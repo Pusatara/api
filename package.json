@@ -4,7 +4,7 @@
   "description": "Pusatara API",
   "main": "index.js",
   "scripts": {
-    "start": "SET \"NODE_ENV=production\" && node ./index.js",
+    "start": "node ./index.js",
     "dev": "SET \"NODE_ENV=development\" && nodemon ./index.js"
   },
   "repository": {
