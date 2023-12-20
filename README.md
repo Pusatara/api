@@ -13,7 +13,7 @@
   - ExpressJS
   - Sequelize
 - Deployment
-  - Compute Engine (to be Cloud Run)
+  - Cloud Run
   - Cloud SQL
   - Cloud Storage
 

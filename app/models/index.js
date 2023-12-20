@@ -2,20 +2,29 @@ const { is_development } = require('../config/config.js');
 const CONFIG = is_development ? require('../config/db.dev.config.js') : require('../config/db.config.js');
 
 const Sequelize = require("sequelize");
+const sequelizeConfig = {
+  dialect: CONFIG.dialect,
+  pool: {
+    max: CONFIG.pool.max,
+    min: CONFIG.pool.min,
+    acquire: CONFIG.pool.acquire,
+    idle: CONFIG.pool.idle
+  },
+};
+
+if (!is_development) {
+  sequelizeConfig.dialectOptions = {
+    socketPath: CONFIG.socketPath
+  };
+} else {
+  sequelizeConfig.host = CONFIG.HOST;
+}
+
 const sequelize = new Sequelize(
   CONFIG.DB,
   CONFIG.USER,
-  CONFIG.PASSWORD,  
-  {
-    host: CONFIG.HOST,
-    dialect: CONFIG.dialect,
-    pool: {
-      max: CONFIG.pool.max,
-      min: CONFIG.pool.min,
-      acquire: CONFIG.pool.acquire,
-      idle: CONFIG.pool.idle
-    },
-  }
+  CONFIG.PASSWORD,
+  sequelizeConfig
 );
 
 const db = {};
