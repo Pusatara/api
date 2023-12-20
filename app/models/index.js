@@ -13,7 +13,9 @@ const sequelizeConfig = {
 };
 
 if (!is_development) {
-  sequelizeConfig.dialectOptions.socketPath = CONFIG.socketPath;
+  sequelizeConfig.dialectOptions = {
+    socketPath: CONFIG.socketPath
+  };
 } else {
   sequelizeConfig.host = CONFIG.HOST;
 }
